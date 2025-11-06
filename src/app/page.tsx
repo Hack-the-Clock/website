@@ -136,26 +136,19 @@ export default function Home() {
             <img src="/hackathon-site/hack-the-clock-logo-icon (1) (1).ico" alt="Hack the Clock" className="w-16 h-16" />
             <h2 className="text-4xl font-bold text-white text-center">What is Hack the Clock?</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-gray-300 text-lg mb-4">
-                Hack the Clock is an annual hackathon on November 6 bringing together creative minds to build innovative projects. Whether you're a seasoned developer or just starting your coding journey, there's a place for you here.
-              </p>
-              <div className="space-y-4">
-                {['Build amazing projects', 'Network with like-minded developers', 'Win exciting prizes', 'Learn new technologies'].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-red-500 to-white flex items-center justify-center">
-                      ✓
-                    </div>
-                    <span className="text-gray-300">{item}</span>
+          <div className="max-w-3xl mx-auto">
+            <p className="text-gray-300 text-lg mb-6 text-center">
+              Hack the Clock is an annual hackathon on November 6 bringing together creative minds to build innovative projects. Whether you're a seasoned developer or just starting your coding journey, there's a place for you here.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {['Build amazing projects', 'Network with like-minded developers', 'Win exciting prizes', 'Learn new technologies'].map((item, i) => (
+                <div key={i} className="flex items-center gap-3">
+                  <div className="w-6 h-6 rounded-full bg-gradient-to-r from-red-500 to-white flex items-center justify-center">
+                    ✓
                   </div>
-                ))}
-              </div>
-            </div>
-            <div className="bg-gradient-to-br from-red-500/20 to-white/20 rounded-lg p-8 border border-red-500/30">
-              <div className="aspect-video bg-gradient-to-br from-red-500/10 to-white/10 rounded-lg flex items-center justify-center">
-                <img src="/hackathon-site/hack-the-clock-logo-icon (1) (1).ico" alt="Hack the Clock" className="w-48 h-48 object-contain" />
-              </div>
+                  <span className="text-gray-300">{item}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
