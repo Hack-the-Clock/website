@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
-2:I[4943,["/website/_next/static/chunks/f2df13ccfa5b740c.js"],"ViewportBoundary"]
-4:I[4943,["/website/_next/static/chunks/f2df13ccfa5b740c.js"],"MetadataBoundary"]
+2:I[18965,["/website/_next/static/chunks/158b8dc3e727cb00.js"],"ViewportBoundary"]
+4:I[18965,["/website/_next/static/chunks/158b8dc3e727cb00.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
-7:I[55920,["/website/_next/static/chunks/f2df13ccfa5b740c.js"],"IconMark"]
+7:I[3832,["/website/_next/static/chunks/158b8dc3e727cb00.js"],"IconMark"]
 :HL["/website/_next/static/chunks/ed029e3ff76e98b8.css","style"]
-0:{"buildId":"m-UNJexaj_2Yv8INeXuba","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"/_not-found","paramType":null,"paramKey":"/_not-found","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"head":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isHeadPartial":false,"staleTime":300}
+0:{"buildId":"KlNcMtJ5MS-ylkWdLt_D7","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"/_not-found","paramType":null,"paramKey":"/_not-found","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"head":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isHeadPartial":false,"staleTime":300}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 6:[["$","title","0",{"children":"Hack the Clock - 12 Hour Hackathon | Nov 6, 2025"}],["$","meta","1",{"name":"description","content":"Join us for 12 hours of innovation and coding!"}],["$","link","2",{"rel":"icon","href":"/website/hack-the-clock-logo-icon (1) (1).ico"}],["$","$L7","3",{}]]
