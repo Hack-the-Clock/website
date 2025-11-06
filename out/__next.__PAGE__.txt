@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
 2:I[14257,["/hackathon-site/_next/static/chunks/f2df13ccfa5b740c.js"],"ClientPageRoot"]
-3:I[84758,["/hackathon-site/_next/static/chunks/45138ec733c6fc59.js"],"default"]
+3:I[84758,["/hackathon-site/_next/static/chunks/da2c8a5ce9c1b7be.js"],"default"]
 6:I[4943,["/hackathon-site/_next/static/chunks/f2df13ccfa5b740c.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"buildId":"5udg78vuS3RnDpj1bSvOx","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/hackathon-site/_next/static/chunks/45138ec733c6fc59.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"OQn7wEb7bgXGQhBNmjS4o","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/hackathon-site/_next/static/chunks/da2c8a5ce9c1b7be.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null

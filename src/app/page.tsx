@@ -242,13 +242,14 @@ export default function Home() {
             {[
               { role: 'Professor', image: '/hackathon-site/clipizzi.avif', link: 'https://www.stevens.edu/profile/clipizzi' },
               { role: 'AI Researcher', image: '/hackathon-site/1743230367046.jpg', link: 'https://www.linkedin.com/in/ishanaryendu/' },
-              { role: 'President of SGTA', image: '/hackathon-site/WhatsApp Image 2025-11-05 at 19.48.41.jpeg', link: 'https://www.linkedin.com/in/drekhi/' }
+              { role: 'President', role2: 'SGTA', image: '/hackathon-site/WhatsApp Image 2025-11-05 at 19.48.41.jpeg', link: 'https://www.linkedin.com/in/drekhi/' }
             ].map((judge, i) => (
               <div key={i} className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg p-8 border-2 border-green-500 text-center hover:border-blue-500 transition hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-green-500/50">
                 <a href={judge.link} target="_blank" rel="noopener noreferrer" className="block w-40 h-48 mx-auto mb-4 rounded-[50%] bg-gradient-to-br from-green-600 to-blue-600 flex items-center justify-center overflow-hidden border-4 border-green-500 shadow-lg hover:border-blue-500 transition cursor-pointer">
                   <img src={judge.image} alt={judge.role} className="w-full h-full object-cover" />
                 </a>
                 <p className="text-green-300 font-semibold text-xl">{judge.role}</p>
+                {judge.role2 && <p className="text-green-300 font-semibold text-xl">{judge.role2}</p>}
               </div>
             ))}
           </div>
@@ -261,14 +262,13 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 mb-12 text-center drop-shadow-lg">Our Sponsors</h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
-              { name: 'Sponsor 1' },
-              { name: 'Sponsor 2' }
+              { image: '/hackathon-site/SGTA_logo.jpeg' },
+              { image: '/hackathon-site/gcc_logo.png' }
             ].map((sponsor, i) => (
               <div key={i} className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg p-12 border-2 border-blue-500 text-center hover:border-green-500 transition hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-blue-500/50">
-                <div className="w-48 h-32 mx-auto mb-4 rounded-[50%] bg-gradient-to-br from-blue-600 to-green-600 flex items-center justify-center overflow-hidden border-4 border-blue-500 shadow-lg p-4">
-                  <img src="/hackathon-site/clipizzi.avif" alt={sponsor.name} className="max-h-full max-w-full object-contain" />
+                <div className="w-full h-32 mx-auto flex items-center justify-center">
+                  <img src={sponsor.image} alt="Sponsor" className="max-h-full max-w-full object-contain" />
                 </div>
-                <div className="text-white font-bold text-xl">{sponsor.name}</div>
               </div>
             ))}
           </div>
@@ -302,8 +302,9 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <div className="font-semibold">© 2025 Hack the Clock. All rights reserved.</div>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-green-400 transition font-semibold">Twitter</a>
+            <a href="https://x.com/hacktheclock" className="hover:text-green-400 transition font-semibold">Twitter</a>
             <a href="https://github.com/Hack-the-Clock" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition font-semibold">GitHub</a>
+            <a href="https://www.linkedin.com/company/stevens-graduate-technical-association/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition font-semibold">LinkedIn</a>
           </div>
         </div>
       </footer>
