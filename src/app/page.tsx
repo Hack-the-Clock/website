@@ -262,13 +262,13 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 mb-12 text-center drop-shadow-lg">Our Sponsors</h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
-              { image: '/hackathon-site/SGTA_logo.jpeg' },
-              { image: '/hackathon-site/gcc_logo.png' }
+              { image: '/hackathon-site/SGTA_logo.jpeg', link: 'https://ducklink.stevens.edu/sgta/home/' },
+              { image: '/hackathon-site/gcc_logo.png', link: 'https://ducklink.stevens.edu/gcc/home/' }
             ].map((sponsor, i) => (
-              <div key={i} className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg p-12 border-2 border-blue-500 text-center hover:border-green-500 transition hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-blue-500/50">
-                <div className="w-full h-32 mx-auto flex items-center justify-center">
-                  <img src={sponsor.image} alt="Sponsor" className="max-h-full max-w-full object-contain" />
-                </div>
+              <div key={i} className="text-center transition hover:scale-105">
+                <a href={sponsor.link} target="_blank" rel="noopener noreferrer" className="block">
+                  <img src={sponsor.image} alt="Sponsor" className="max-h-48 w-full object-contain hover:opacity-80 transition" />
+                </a>
               </div>
             ))}
           </div>
