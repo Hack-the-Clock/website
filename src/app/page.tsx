@@ -9,6 +9,7 @@ export default function Home() {
     minutes: 0,
     seconds: 0
   });
+  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
     const targetDate = new Date('2025-11-06T09:00:00').getTime();
@@ -31,6 +32,31 @@ export default function Home() {
     const interval = setInterval(updateCountdown, 1000);
 
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['about', 'schedule', 'judges', 'sponsors', 'faq'];
+      const scrollPosition = window.scrollY + 100; // Offset for navbar
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetBottom = offsetTop + element.offsetHeight;
+
+          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -57,11 +83,11 @@ export default function Home() {
               </a>
             </div>
           <nav className="flex flex-wrap gap-6">
-            <a href="#about" className="text-green-300 hover:text-green-400 transition font-semibold">About</a>
-            <a href="#schedule" className="text-green-300 hover:text-green-400 transition font-semibold">Schedule</a>
-            <a href="#judges" className="text-green-300 hover:text-green-400 transition font-semibold">Judges</a>
-            <a href="#sponsors" className="text-green-300 hover:text-green-400 transition font-semibold">Sponsors</a>
-            <a href="#faq" className="text-green-300 hover:text-green-400 transition font-semibold">FAQ</a>
+            <a href="#about" className={`transition font-semibold ${activeSection === 'about' ? 'text-green-400 border-b-2 border-green-400' : 'text-green-300 hover:text-green-400'}`}>About</a>
+            <a href="#schedule" className={`transition font-semibold ${activeSection === 'schedule' ? 'text-green-400 border-b-2 border-green-400' : 'text-green-300 hover:text-green-400'}`}>Schedule</a>
+            <a href="#judges" className={`transition font-semibold ${activeSection === 'judges' ? 'text-green-400 border-b-2 border-green-400' : 'text-green-300 hover:text-green-400'}`}>Judges</a>
+            <a href="#sponsors" className={`transition font-semibold ${activeSection === 'sponsors' ? 'text-green-400 border-b-2 border-green-400' : 'text-green-300 hover:text-green-400'}`}>Sponsors</a>
+            <a href="#faq" className={`transition font-semibold ${activeSection === 'faq' ? 'text-green-400 border-b-2 border-green-400' : 'text-green-300 hover:text-green-400'}`}>FAQ</a>
           </nav>
             {/* <button className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-2 rounded-lg hover:shadow-lg hover:shadow-red-500/50 transition">
               Register
@@ -300,7 +326,6 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gradient-to-r from-black via-slate-900 to-black text-white py-8 px-4 relative z-10 shadow-2xl border-t-2 border-green-500">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <div className="font-semibold">© 2025 Hack the Clock. All rights reserved.</div>
           <div className="flex gap-6">
             <a href="https://x.com/hacktheclock" className="hover:text-green-400 transition font-semibold">Twitter</a>
             <a href="https://github.com/Hack-the-Clock" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition font-semibold">GitHub</a>
