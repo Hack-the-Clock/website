@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[41716,["/hackathon-site/_next/static/chunks/f2df13ccfa5b740c.js"],"default"]
 3:I[34694,["/hackathon-site/_next/static/chunks/f2df13ccfa5b740c.js"],"default"]
-0:{"buildId":"3oziqytRLnD-Ac8cV8-lq","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"nuH0qZn8b-2gYm_G8nUsp","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
