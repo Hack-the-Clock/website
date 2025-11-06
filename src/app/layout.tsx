@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hack the Clock",
+  title: "Hack the Clock - 12 Hour Hackathon | Nov 6, 2025",
   description: "Join us for 12 hours of innovation and coding!",
   icons: {
     icon: '/hackathon-site/hack-the-clock-logo-icon (1) (1).ico',
