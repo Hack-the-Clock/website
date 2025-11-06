@@ -236,10 +236,10 @@ export default function Home() {
                 { time: '9:30 AM', event: 'Opening Remarks & Logistics', desc: 'Welcome address, event overview, and important logistics information.', side: 'right' },
                 { time: '12:30 PM', event: 'Lunch', desc: 'Take a break, refuel, and network with sponsors and peers.', side: 'left' },
                 { time: '3:00 PM', event: '"State of the Hack" Update', desc: 'Check-in on progress, get inspired by what teams are building!', side: 'right' },
-                { time: '6:30 PM', event: 'Snacks', desc: 'Recharge with snacks and keep the momentum going into the final stretch.', side: 'left' },
-                { time: '8:00 PM', event: 'Submission Deadline', desc: 'Repos must be publicly viewable or shared with judges. Final push time!', side: 'right' },
-                { time: '8:15 PM', event: 'Judging Begins', desc: 'Science-fair style judging, approximately 5 minutes per team. Show off your work!', side: 'left' },
-                { time: '9:00 PM', event: 'Awards & Closing Photo', desc: 'Winner announcements, prizes, celebration, and the official group photo!', side: 'right' }
+                { time: '5:30 PM', event: 'Snacks', desc: 'Recharge with snacks and keep the momentum going into the final stretch.', side: 'left' },
+                { time: '7:00 PM', event: 'Submission Deadline', desc: 'Repos must be publicly viewable or shared with judges. Final push time!', side: 'right' },
+                { time: '7:15 PM', event: 'Judging Begins', desc: 'Science-fair style judging, approximately 5 minutes per team. Show off your work!', side: 'left' },
+                { time: '8:00 PM', event: 'Awards & Closing Photo', desc: 'Winner announcements, prizes, celebration, and the official group photo!', side: 'right' }
               ].map((item, i) => (
                 <div key={i} className={`relative flex items-center ${item.side === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col md:gap-12 gap-4`}>
                   {/* Content Card */}
