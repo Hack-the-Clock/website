@@ -1,0 +1,9 @@
+1:"$Sreact.fragment"
+2:I[4943,["/hackathon-site/_next/static/chunks/f2df13ccfa5b740c.js"],"ViewportBoundary"]
+4:I[4943,["/hackathon-site/_next/static/chunks/f2df13ccfa5b740c.js"],"MetadataBoundary"]
+5:"$Sreact.suspense"
+7:I[55920,["/hackathon-site/_next/static/chunks/f2df13ccfa5b740c.js"],"IconMark"]
+:HL["/hackathon-site/_next/static/chunks/971d6fcd3e5ab876.css","style"]
+0:{"buildId":"3oziqytRLnD-Ac8cV8-lq","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"/_not-found","paramType":null,"paramKey":"/_not-found","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"head":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isHeadPartial":false,"staleTime":300}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+6:[["$","title","0",{"children":"Hack the Clock"}],["$","meta","1",{"name":"description","content":"Join us for 12 hours of innovation and coding!"}],["$","link","2",{"rel":"icon","href":"/hackathon-site/hack-the-clock-logo-icon (1) (1).ico"}],["$","$L7","3",{}]]
