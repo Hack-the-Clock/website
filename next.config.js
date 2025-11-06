@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/hackathon-site',        // Comment out for local testing
-  assetPrefix: '/hackathon-site',     // Comment out for local testing
+  // basePath: '/website',        // Comment out for local testing
+  // assetPrefix: '/website',     // Comment out for local testing
   images: {
     unoptimized: true,
   },
