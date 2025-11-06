@@ -133,7 +133,6 @@ export default function Home() {
       <section id="about" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-center gap-4 mb-8">
-            <img src="/hackathon-site/hack-the-clock-logo-icon (1) (1).ico" alt="Hack the Clock" className="w-16 h-16" />
             <h2 className="text-4xl font-bold text-white text-center">What is Hack the Clock?</h2>
           </div>
           <div className="max-w-4xl mx-auto">
