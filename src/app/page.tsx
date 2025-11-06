@@ -242,7 +242,7 @@ export default function Home() {
             {[
               { role: 'Professor', image: '/hackathon-site/clipizzi.avif', link: 'https://www.stevens.edu/profile/clipizzi' },
               { role: 'AI Researcher', image: '/hackathon-site/1743230367046.jpg', link: 'https://www.linkedin.com/in/ishanaryendu/' },
-              { role: 'President of Stevens Graduate Technical Association', image: '/hackathon-site/WhatsApp Image 2025-11-05 at 19.48.41.jpeg', link: 'https://www.linkedin.com/in/drekhi/' }
+              { role: 'President of SGTA', image: '/hackathon-site/WhatsApp Image 2025-11-05 at 19.48.41.jpeg', link: 'https://www.linkedin.com/in/drekhi/' }
             ].map((judge, i) => (
               <div key={i} className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg p-8 border-2 border-green-500 text-center hover:border-blue-500 transition hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-green-500/50">
                 <a href={judge.link} target="_blank" rel="noopener noreferrer" className="block w-40 h-48 mx-auto mb-4 rounded-[50%] bg-gradient-to-br from-green-600 to-blue-600 flex items-center justify-center overflow-hidden border-4 border-green-500 shadow-lg hover:border-blue-500 transition cursor-pointer">
