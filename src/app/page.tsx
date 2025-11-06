@@ -69,7 +69,7 @@ export default function Home() {
       </div>
 
       {/* Navigation */}
-      <nav className="fixed w-full bg-gradient-to-r from-black via-blue-900 to-green-900 backdrop-blur-md bg-opacity-95 z-50 shadow-lg border-b-2 border-green-500 relative overflow-hidden">
+      <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-black via-blue-900 to-green-900 backdrop-blur-md bg-opacity-95 z-50 shadow-lg border-b-2 border-green-500 overflow-hidden">
         {/* Animated border line */}
         <div className="absolute bottom-0 left-0 w-1/3 h-1 bg-gradient-to-r from-green-400 via-green-300 to-transparent animate-slide shadow-lg shadow-green-500/50"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
