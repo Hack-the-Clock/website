@@ -41,7 +41,7 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
               <a href="#" className="flex items-center gap-3">
-                <img src="/favicon.ico" alt="Hack the Clock" className="h-10 w-10" />
+                <img src="/hackathon-site/hack-the-clock-logo-icon (1) (1).ico" alt="Hack the Clock" className="h-10 w-10" />
                 <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-white">
                   Hack the Clock
                 </span>
@@ -133,7 +133,7 @@ export default function Home() {
       <section id="about" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-center gap-4 mb-12">
-            <img src="/favicon.ico" alt="Hack the Clock" className="w-16 h-16" />
+            <img src="/hackathon-site/hack-the-clock-logo-icon (1) (1).ico" alt="Hack the Clock" className="w-16 h-16" />
             <h2 className="text-4xl font-bold text-white text-center">What is Hack the Clock?</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
             <div className="bg-gradient-to-br from-red-500/20 to-white/20 rounded-lg p-8 border border-red-500/30">
               <div className="aspect-video bg-gradient-to-br from-red-500/10 to-white/10 rounded-lg flex items-center justify-center">
-                <img src="/favicon.ico" alt="Hack the Clock" className="w-48 h-48 object-contain" />
+                <img src="/hackathon-site/hack-the-clock-logo-icon (1) (1).ico" alt="Hack the Clock" className="w-48 h-48 object-contain" />
               </div>
             </div>
           </div>
@@ -219,7 +219,7 @@ export default function Home() {
             ].map((judge, i) => (
               <div key={i} className="bg-gradient-to-br from-red-500/10 to-white/10 rounded-lg p-8 border border-red-500/20 text-center hover:border-red-500/50 transition">
                 <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-red-500/20 to-white/20 flex items-center justify-center overflow-hidden">
-                  <img src="/clipizzi.avif" alt={judge.name} className="w-full h-full object-cover" />
+                  <img src="/hackathon-site/clipizzi.avif" alt={judge.name} className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{judge.name}</h3>
                 <p className="text-gray-400">{judge.role}</p>
@@ -240,7 +240,7 @@ export default function Home() {
             ].map((sponsor, i) => (
               <div key={i} className="bg-gradient-to-br from-red-500/10 to-white/10 rounded-lg p-12 border border-red-500/20 text-center hover:border-red-500/50 transition">
                 <div className="h-24 flex items-center justify-center mb-4">
-                  <img src="/clipizzi.avif" alt={sponsor.name} className="max-h-full max-w-full object-contain" />
+                  <img src="/hackathon-site/clipizzi.avif" alt={sponsor.name} className="max-h-full max-w-full object-contain" />
                 </div>
                 <div className="text-gray-300 font-semibold">{sponsor.name}</div>
               </div>

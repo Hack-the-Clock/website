@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Hack the Clock",
   description: "Join us for 12 hours of innovation and coding!",
   icons: {
-    icon: '/favicon.ico',
+    icon: '/hackathon-site/hack-the-clock-logo-icon (1) (1).ico',
   },
 };
 
