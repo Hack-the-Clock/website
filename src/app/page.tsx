@@ -48,7 +48,9 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
               <a href="#" className="flex items-center gap-3">
-                <img src="/hackathon-site/hack-the-clock-logo-icon (1) (1).ico" alt="Hack the Clock" className="h-10 w-10 drop-shadow-lg" />
+                <div className="h-12 w-12 rounded-lg bg-gradient-to-br from-green-600 to-blue-600 p-1 flex items-center justify-center shadow-lg">
+                  <img src="/hackathon-site/hack-the-clock-logo-icon (1) (1).ico" alt="Hack the Clock" className="h-full w-full object-contain rounded-md" />
+                </div>
                 <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 drop-shadow-sm">
                   Hack the Clock
                 </span>
@@ -238,16 +240,15 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 mb-12 text-center drop-shadow-lg">Our Judges</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { name: 'Judge 1', role: 'Industry Expert' },
-              { name: 'Judge 2', role: 'Tech Leader' },
-              { name: 'Judge 3', role: 'Innovation Specialist' }
+              { role: 'Professor', image: '/hackathon-site/clipizzi.avif', link: 'https://www.stevens.edu/profile/clipizzi' },
+              { role: 'AI Researcher', image: '/hackathon-site/1743230367046.jpg', link: 'https://www.linkedin.com/in/ishanaryendu/' },
+              { role: 'President of Stevens Graduate Technical Association', image: '/hackathon-site/WhatsApp Image 2025-11-05 at 19.48.41.jpeg', link: 'https://www.linkedin.com/in/drekhi/' }
             ].map((judge, i) => (
               <div key={i} className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg p-8 border-2 border-green-500 text-center hover:border-blue-500 transition hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-green-500/50">
-                <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-green-600 to-blue-600 flex items-center justify-center overflow-hidden border-4 border-green-500 shadow-lg">
-                  <img src="/hackathon-site/clipizzi.avif" alt={judge.name} className="w-full h-full object-cover" />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">{judge.name}</h3>
-                <p className="text-green-300 font-semibold">{judge.role}</p>
+                <a href={judge.link} target="_blank" rel="noopener noreferrer" className="block w-40 h-48 mx-auto mb-4 rounded-[50%] bg-gradient-to-br from-green-600 to-blue-600 flex items-center justify-center overflow-hidden border-4 border-green-500 shadow-lg hover:border-blue-500 transition cursor-pointer">
+                  <img src={judge.image} alt={judge.role} className="w-full h-full object-cover" />
+                </a>
+                <p className="text-green-300 font-semibold text-xl">{judge.role}</p>
               </div>
             ))}
           </div>
@@ -264,7 +265,7 @@ export default function Home() {
               { name: 'Sponsor 2' }
             ].map((sponsor, i) => (
               <div key={i} className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg p-12 border-2 border-blue-500 text-center hover:border-green-500 transition hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-blue-500/50">
-                <div className="h-24 flex items-center justify-center mb-4">
+                <div className="w-48 h-32 mx-auto mb-4 rounded-[50%] bg-gradient-to-br from-blue-600 to-green-600 flex items-center justify-center overflow-hidden border-4 border-blue-500 shadow-lg p-4">
                   <img src="/hackathon-site/clipizzi.avif" alt={sponsor.name} className="max-h-full max-w-full object-contain" />
                 </div>
                 <div className="text-white font-bold text-xl">{sponsor.name}</div>
