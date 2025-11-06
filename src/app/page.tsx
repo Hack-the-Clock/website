@@ -77,7 +77,7 @@ export default function Home() {
             <div className="flex items-center gap-2 md:gap-3">
               <a href="#" className="flex items-center gap-2 md:gap-3">
                 <div className="h-10 w-10 md:h-12 md:w-12 rounded-lg bg-gradient-to-br from-green-600 to-blue-600 p-1 flex items-center justify-center shadow-lg">
-                  <img src="/website/hack-the-clock-logo-icon (1) (1).ico" alt="Hack the Clock" className="h-full w-full object-contain rounded-md" />
+                  <img src="/hack-the-clock-logo-icon (1) (1).ico" alt="Hack the Clock" className="h-full w-full object-contain rounded-md" />
                 </div>
                 <span className="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 drop-shadow-sm">
                   Hack the Clock
@@ -274,9 +274,9 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 mb-8 md:mb-12 text-center drop-shadow-lg">Our Judges</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {[
-              { role: 'Professor', image: '/website/clipizzi.avif', link: 'https://www.stevens.edu/profile/clipizzi' },
-              { role: 'AI Researcher', image: '/website/1743230367046.jpg', link: 'https://www.linkedin.com/in/ishanaryendu/' },
-              { role: 'President', role2: 'SGTA', image: '/website/WhatsApp Image 2025-11-05 at 19.48.41.jpeg', link: 'https://www.linkedin.com/in/drekhi/' }
+              { role: 'Professor', image: '/clipizzi.avif', link: 'https://www.stevens.edu/profile/clipizzi' },
+              { role: 'AI Researcher', image: '/1743230367046.jpg', link: 'https://www.linkedin.com/in/ishanaryendu/' },
+              { role: 'President', role2: 'SGTA', image: '/WhatsApp Image 2025-11-05 at 19.48.41.jpeg', link: 'https://www.linkedin.com/in/drekhi/' }
             ].map((judge, i) => (
               <div key={i} className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg p-6 md:p-8 border-2 border-green-500 text-center hover:border-blue-500 transition hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-green-500/50">
                 <a href={judge.link} target="_blank" rel="noopener noreferrer" className="block w-32 h-40 sm:w-36 sm:h-44 md:w-40 md:h-48 mx-auto mb-4 rounded-[50%] bg-gradient-to-br from-green-600 to-blue-600 flex items-center justify-center overflow-hidden border-4 border-green-500 shadow-lg hover:border-blue-500 transition cursor-pointer">
@@ -296,8 +296,8 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 mb-8 md:mb-12 text-center drop-shadow-lg">Our Sponsors</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
             {[
-              { image: '/website/SGTA_logo.jpeg', link: 'https://ducklink.stevens.edu/sgta/home/' },
-              { image: '/website/gcc_logo.png', link: 'https://ducklink.stevens.edu/gcc/home/' }
+              { image: '/SGTA_logo.jpeg', link: 'https://ducklink.stevens.edu/sgta/home/' },
+              { image: '/gcc_logo.png', link: 'https://ducklink.stevens.edu/gcc/home/' }
             ].map((sponsor, i) => (
               <div key={i} className="text-center transition hover:scale-105">
                 <a href={sponsor.link} target="_blank" rel="noopener noreferrer" className="block">

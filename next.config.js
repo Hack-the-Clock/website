@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/website',        // Comment out for local testing
-  assetPrefix: '/website',     // Comment out for local testing
+  // Remove basePath and assetPrefix for custom domain
+  // basePath: '/website',
+  // assetPrefix: '/website',
   images: {
     unoptimized: true,
   },
