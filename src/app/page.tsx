@@ -117,14 +117,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 relative z-10">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-xl">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-normal drop-shadow-xl">
             Build the Future.
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 animate-pulse">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 animate-pulse pb-2">
               Together.
             </span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto font-semibold">
-            Join hundreds of developers, designers, and innovators on November 6 for 12 hours of non-stop coding, collaboration, and creation.
+            Join hundreds of developers, designers, and innovators on <span className="whitespace-nowrap">November 6</span> for 12 hours of non-stop coding, collaboration, and creation.
           </p>
           
           {/* Countdown Timer */}
