@@ -69,7 +69,9 @@ export default function Home() {
       </div>
 
       {/* Navigation */}
-      <nav className="fixed w-full bg-gradient-to-r from-black via-blue-900 to-green-900 backdrop-blur-md bg-opacity-95 z-50 shadow-lg border-b-2 border-green-500">
+      <nav className="fixed w-full bg-gradient-to-r from-black via-blue-900 to-green-900 backdrop-blur-md bg-opacity-95 z-50 shadow-lg border-b-2 border-green-500 relative overflow-hidden">
+        {/* Animated border line */}
+        <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-green-400 to-transparent animate-slide"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center py-3 md:py-0 md:h-16 gap-3 md:gap-0">
             <div className="flex items-center gap-2 md:gap-3">
@@ -100,8 +102,15 @@ export default function Home() {
           66% { transform: translate(-20px, 20px) scale(0.9); }
           100% { transform: translate(0px, 0px) scale(1); }
         }
+        @keyframes slide {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(100%); }
+        }
         .animate-blob {
           animation: blob 7s infinite;
+        }
+        .animate-slide {
+          animation: slide 3s ease-in-out infinite;
         }
         .animation-delay-2000 {
           animation-delay: 2s;
