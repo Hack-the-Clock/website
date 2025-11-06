@@ -54,9 +54,9 @@ export default function Home() {
             <a href="#sponsors" className="text-gray-300 hover:text-white transition">Sponsors</a>
             <a href="#faq" className="text-gray-300 hover:text-white transition">FAQ</a>
           </nav>
-            <button className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-2 rounded-lg hover:shadow-lg hover:shadow-red-500/50 transition">
+            {/* <button className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-2 rounded-lg hover:shadow-lg hover:shadow-red-500/50 transition">
               Register
-            </button>
+            </button> */}
           </div>
         </div>
       </nav>
@@ -71,7 +71,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join hundreds of developers, designers, and innovators for 48 hours of non-stop coding, collaboration, and creation.
+            Join hundreds of developers, designers, and innovators on November 6 for 12 hours of non-stop coding, collaboration, and creation.
           </p>
           
           {/* Countdown Timer */}
@@ -132,14 +132,14 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center">What is Hack the Clock?</h2>
+          <div className="flex items-center justify-center gap-4 mb-12">
+            <img src="/favicon.ico" alt="Hack the Clock" className="w-16 h-16" />
+            <h2 className="text-4xl font-bold text-white text-center">What is Hack the Clock?</h2>
+          </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="mb-6 flex justify-center md:justify-start">
-                {/* <img src="/favicon.ico" alt="Hack the Clock" className="w-24 h-24" /> */}
-              </div>
               <p className="text-gray-300 text-lg mb-4">
-                Hack the Clock is an annual hackathon bringing together creative minds to build innovative projects. Whether you're a seasoned developer or just starting your coding journey, there's a place for you here.
+                Hack the Clock is an annual hackathon on November 6 bringing together creative minds to build innovative projects. Whether you're a seasoned developer or just starting your coding journey, there's a place for you here.
               </p>
               <div className="space-y-4">
                 {['Build amazing projects', 'Network with like-minded developers', 'Win exciting prizes', 'Learn new technologies'].map((item, i) => (
@@ -163,24 +163,46 @@ export default function Home() {
 
       {/* Schedule Section */}
       <section id="schedule" className="py-20 px-4 bg-opacity-50 bg-slate-800">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center">Timeline</h2>
-          <div className="space-y-6">
-            {[
-              { time: 'November 6, 8:30 AM', event: 'Check-in & Opening Ceremony', desc: 'Welcome to Hack the Clock!' },
-              { time: 'November 6, 9:00 AM', event: 'Hacking Begins', desc: 'Start building your projects' },
-              { time: 'November 6, 3:00 PM', event: 'Midpoint Boost', desc: 'Workshops and mentor sessions' },
-              { time: 'November 6, 8:00 PM', event: 'Final Sprint', desc: '1 hour left to finalize your project' },
-              { time: 'November 6, 9:00 PM', event: 'Judging & Awards', desc: 'Project demonstrations and winners announcement' }
-            ].map((item, i) => (
-              <div key={i} className="flex gap-6 items-start">
-                <div className="w-24 font-semibold text-red-500 flex-shrink-0">{item.time}</div>
-                <div className="flex-1 border-l-2 border-red-500/50 pl-6 pb-6">
-                  <h3 className="text-xl font-bold text-white">{item.event}</h3>
-                  <p className="text-gray-400 mt-1">{item.desc}</p>
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-16 text-center">Event Timeline - November 6, 2025</h2>
+          <div className="relative">
+            {/* Vertical Line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-red-500 via-red-600 to-red-500 hidden md:block"></div>
+            
+            <div className="space-y-12">
+              {[
+                { time: '8:30 AM', event: 'Check-in & Opening Ceremony', desc: 'Registration, team formation, and welcome address. Get your swag and meet fellow hackers!', side: 'left' },
+                { time: '9:00 AM', event: 'Hacking Begins!', desc: 'The clock starts! Teams dive into building their innovative projects.', side: 'right' },
+                { time: '12:00 PM', event: 'Lunch Break', desc: 'Fuel up with lunch while networking with other participants and mentors.', side: 'left' },
+                { time: '3:00 PM', event: 'Midpoint Workshops', desc: 'Technical workshops and mentor sessions to help boost your project.', side: 'right' },
+                { time: '6:00 PM', event: 'Dinner Time', desc: 'Recharge with dinner and keep the momentum going!', side: 'left' },
+                { time: '8:00 PM', event: 'Final Sprint', desc: 'Last hour to polish your project, prepare demos, and finalize presentations!', side: 'right' },
+                { time: '9:00 PM', event: 'Project Demos', desc: 'Show off what you built! Present your project to judges and peers.', side: 'left' },
+                { time: '10:00 PM', event: 'Awards & Closing', desc: 'Winner announcements, prizes, and celebration of all participants!', side: 'right' }
+              ].map((item, i) => (
+                <div key={i} className={`relative flex items-center ${item.side === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col md:gap-12 gap-4`}>
+                  {/* Content Card */}
+                  <div className="w-full md:w-[calc(50%-3rem)] bg-gradient-to-br from-red-500/10 to-white/5 rounded-xl p-6 border border-red-500/20 hover:border-red-500/40 transition group hover:scale-105 text-left">
+                    <h3 className="text-2xl font-bold text-white mb-2">{item.event}</h3>
+                    <p className="text-gray-300 leading-relaxed mb-3">{item.desc}</p>
+                    <div className="text-red-400 font-semibold text-lg">{item.time}</div>
+                  </div>
+                  
+                  {/* Center Circle */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center text-white font-bold border-4 border-slate-800 group-hover:scale-125 transition z-10 hidden md:flex">
+                    {i + 1}
+                  </div>
+                  
+                  {/* Mobile Circle */}
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center text-white font-bold border-4 border-slate-800 md:hidden">
+                    {i + 1}
+                  </div>
+                  
+                  {/* Empty space for other side */}
+                  <div className="hidden md:block md:w-[calc(50%-3rem)]"></div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -191,14 +213,13 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-white mb-12 text-center">Our Judges</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { name: 'Judge 1', role: 'Industry Expert', img: '/judges/judge1.jpg' },
-              { name: 'Judge 2', role: 'Tech Leader', img: '/judges/judge2.jpg' },
-              { name: 'Judge 3', role: 'Innovation Specialist', img: '/judges/judge3.jpg' }
+              { name: 'Judge 1', role: 'Industry Expert' },
+              { name: 'Judge 2', role: 'Tech Leader' },
+              { name: 'Judge 3', role: 'Innovation Specialist' }
             ].map((judge, i) => (
               <div key={i} className="bg-gradient-to-br from-red-500/10 to-white/10 rounded-lg p-8 border border-red-500/20 text-center hover:border-red-500/50 transition">
                 <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-red-500/20 to-white/20 flex items-center justify-center overflow-hidden">
-                  <img src={judge.img} alt={judge.name} className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-                  <div className="text-6xl">👨‍💼</div>
+                  <img src="/clipizzi.avif" alt={judge.name} className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{judge.name}</h3>
                 <p className="text-gray-400">{judge.role}</p>
@@ -214,12 +235,12 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-white mb-12 text-center">Our Sponsors</h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
-              { name: 'Sponsor 1', img: '/sponsors/sponsor1.png' },
-              { name: 'Sponsor 2', img: '/sponsors/sponsor2.png' }
+              { name: 'Sponsor 1' },
+              { name: 'Sponsor 2' }
             ].map((sponsor, i) => (
               <div key={i} className="bg-gradient-to-br from-red-500/10 to-white/10 rounded-lg p-12 border border-red-500/20 text-center hover:border-red-500/50 transition">
                 <div className="h-24 flex items-center justify-center mb-4">
-                  <img src={sponsor.img} alt={sponsor.name} className="max-h-full max-w-full object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                  <img src="/clipizzi.avif" alt={sponsor.name} className="max-h-full max-w-full object-contain" />
                 </div>
                 <div className="text-gray-300 font-semibold">{sponsor.name}</div>
               </div>
@@ -256,8 +277,7 @@ export default function Home() {
           <div>© 2025 Hack the Clock. All rights reserved.</div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition">Twitter</a>
-            <a href="#" className="hover:text-white transition">Discord</a>
-            <a href="#" className="hover:text-white transition">GitHub</a>
+            <a href="https://github.com/Hack-the-Clock" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">GitHub</a>
           </div>
         </div>
       </footer>
